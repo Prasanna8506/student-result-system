@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+</head>
+<body>
+
+    <h2>Student Result </h2>
+
+    <p><b>Name:</b> {{ student[1] }}</p>
+    <p><b>USN:</b> {{ student[2] }}</p>
+
+    <h3>Languages</h3>
+    <p>Kannada: {{ student[4] }}</p>
+    <p>English: {{ student[5] }}</p>
+    <p>Hindi: {{ student[6] }}</p>
+
+    <h3>Core Subjects</h3>
+    <p>Mathematics: {{ student[7] }}</p>
+    <p>Science : {{ student[8] }}</p>
+    <p>Social Science: {{ student[9] }}</p>
+
+    <hr>
+
+    <p><b>Total:</b>
+        {{ student[4] + student[5] + student[6] + student[7] + student[8] + student[9] }}
+    </p>
+
+    <p><b>Percentage:</b>
+        {{ (student[4] + student[5] + student[6] + student[7] + student[8] + student[9]) / 6 }}%
+    </p>
+
+    <br>
+    <a href="/">Back</a>
+
+</body>
+</html>
